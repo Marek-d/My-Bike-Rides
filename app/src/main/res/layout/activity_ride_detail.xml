@@ -1,0 +1,125 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="25dp"
+        android:orientation="vertical"
+        android:gravity="clip_vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Názov trasy:"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:background="#FFF"
+            android:elevation="35dp" />
+
+        <TextView
+            android:id="@+id/rideNameDetailTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Dátum:"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:background="#FFF"
+            android:elevation="35dp"/>
+
+        <TextView
+            android:id="@+id/dateDetailTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Dĺžka jazdy:"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:background="#FFF"
+            android:elevation="35dp"/>
+
+        <TextView
+            android:id="@+id/ridingTimeDetailTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Prejdená vzdialenosť:"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:background="#FFF"
+            android:elevation="35dp"/>
+
+        <TextView
+            android:id="@+id/rideDistanceDetailTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Maximálna rýchlosť:"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:background="#FFF"
+            android:elevation="35dp"/>
+
+        <TextView
+            android:id="@+id/maxSpeedDetailTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Priemerná rýchlosť:"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:background="#FFF"
+            android:elevation="35dp"/>
+
+        <TextView
+            android:id="@+id/averageSpeedDetailTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"/>
+
+        <RatingBar
+            android:id="@+id/detailRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+
+            android:numStars="5"
+            android:stepSize="1"
+            android:isIndicator="true"/>
+    </LinearLayout>
+</ScrollView>

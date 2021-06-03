@@ -1,0 +1,116 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="25dp"
+        android:orientation="vertical"
+        android:gravity="clip_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*Názov trasy:" />
+
+        <EditText
+            android:id="@+id/rideNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="*Dátum:" />
+
+        <EditText
+            android:id="@+id/dateEditText"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:hint="dd/mm/yyyy"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Dĺžka jazdy:" />
+
+        <EditText
+            android:id="@+id/ridingTimeEditText"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:inputType="datetime" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="*Prejdená vzdialenosť:" />
+
+        <EditText
+            android:id="@+id/rideDistanceEditText"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Maximálna rýchlosť:" />
+
+        <EditText
+            android:id="@+id/maxSpeedEditText"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Priemerná rýchlosť:" />
+
+        <EditText
+            android:id="@+id/averageSpeedEditText"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+
+            android:numStars="5"
+            android:stepSize="1"
+            android:isIndicator="false"
+            android:clickable="true"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/saveRideButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+
+            android:layout_marginBottom="15dp"
+            android:text="Uložiť"
+            android:onClick="saveRide" />
+    </LinearLayout>
+</ScrollView>
